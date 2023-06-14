@@ -22,6 +22,6 @@ public class StringDeneme {
         System.out.println(kelime.replaceAll("[0-9a-zA-Z]","*"));
         System.out.println(mesaj.toLowerCase());
         System.out.println("git deneme");
-        System.out.println("değişiklik");
+
     }
 }

@@ -8,7 +8,7 @@ public class PropertiesFileDemo {
     public static void main(String[] args) throws IOException {
 
         //first step location the file that we want to read.
-        String path = "C:\\Users\\pcbel\\OneDrive\\Masaüstü\\SYNTAX\\Config.properties";
+        String path="Files/Config.properties";
 
         //navigating to that location.
         FileInputStream fileInputStream = new FileInputStream(path);

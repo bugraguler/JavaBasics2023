@@ -1,6 +1,6 @@
 package com.classes.class024;
 
-public abstract class File {
+public abstract class FileClass {
     abstract void open();
 
     final void edit() {
@@ -12,19 +12,19 @@ public abstract class File {
     }
 }
 
-class JavaFile extends File {
+class JavaFile extends FileClass {
     void open() {
         System.out.println("java opens");
     }
 }
 
-class WordFile extends File {
+class WordFile extends FileClass {
     void open() {
         System.out.println("word opens");
     }
 }
 
-class PdfFile extends File {
+class PdfFile extends FileClass {
     void open() {
         System.out.println("Pdf opens");
     }
@@ -32,11 +32,11 @@ class PdfFile extends File {
 
 class Tester {
     public static void main(String[] args) {
-        File[] files = {new PdfFile(), new JavaFile(), new WordFile()};
-        for (File file : files) {
-            file.open();
-            file.edit();
-            file.close();
+        FileClass[] files = {new PdfFile(), new JavaFile(), new WordFile()};
+        for (FileClass fileS : files) {
+            fileS.open();
+            fileS.edit();
+            fileS.close();
         }
        for(int i=0;i< files.length;i++){
            files[i].open();
